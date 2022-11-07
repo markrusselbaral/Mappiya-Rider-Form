@@ -1,75 +1,212 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <title>Responsive Registration Form</title>
-    <meta name="viewport" content="width=device-width,
-      initial-scale=1.0"/>
-    <link rel="stylesheet" href="style.css" />
-  </head>
-  <body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!----======== CSS ======== -->
+    <link rel="stylesheet" href="style.css">
+     
+    <!----===== Iconscout CSS ===== -->
+    <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+
+    <title>Mappiya Registration Form</title> 
+</head>
+<body>
     <div class="container">
-      <h1 class="form-title">Registration</h1>
-      <form action="#">
-        <div class="main-user-info">
-          <div class="user-input-box">
-            <label for="fullName">Full Name</label>
-            <input type="text"
-                    id="fullName"
-                    name="fullName"
-                    placeholder="Enter Full Name"/>
-          </div>
-          <div class="user-input-box">
-            <label for="username">Username</label>
-            <input type="text"
-                    id="username"
-                    name="username"
-                    placeholder="Enter Username"/>
-          </div>
-          <div class="user-input-box">
-            <label for="email">Email</label>
-            <input type="email"
-                    id="email"
-                    name="email"
-                    placeholder="Enter Email"/>
-          </div>
-          <div class="user-input-box">
-            <label for="phoneNumber">Phone Number</label>
-            <input type="text"
-                    id="phoneNumber"
-                    name="phoneNumber"
-                    placeholder="Enter Phone Number"/>
-          </div>
-          <div class="user-input-box">
-            <label for="password">Password</label>
-            <input type="password"
-                    id="password"
-                    name="password"
-                    placeholder="Enter Password"/>
-          </div>
-          <div class="user-input-box">
-            <label for="confirmPassword">Confirm Password</label>
-            <input type="password"
-                    id="confirmPassword"
-                    name="confirmPassword"
-                    placeholder="Confirm Password"/>
-          </div>
-        </div>
-        <div class="gender-details-box">
-          <span class="gender-title">Gender</span>
-          <div class="gender-category">
-            <input type="radio" name="gender" id="male">
-            <label for="male">Male</label>
-            <input type="radio" name="gender" id="female">
-            <label for="female">Female</label>
-            <input type="radio" name="gender" id="other">
-            <label for="other">Other</label>
-          </div>
-        </div>
-        <div class="form-submit-btn">
-          <input type="submit" value="Register">
-        </div>
-      </form>
+        <header>Mappiya Registration Form</header>
+
+        <form action="#">
+            <div class="form first">
+                <div class="details personal">
+                    <span class="title">Account Information</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>First Name</label>
+                            <input type="text" placeholder="Enter your first name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Middle Name</label>
+                            <input type="date" placeholder="Enter your middle name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Last Name</label>
+                            <input type="text" placeholder="Enter your last name">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Address 1</label>
+                            <input type="text" placeholder="Enter address 1">
+                        </div>
+
+                         <div class="input-field">
+                            <label>Address 2</label>
+                            <input type="text" placeholder="Enter address 2">
+                        </div>
+
+                         <div class="input-field">
+                            <label>Barangay</label>
+                            <input type="text" placeholder="Enter barangay">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Region</label>
+                            <select>
+                                <option disabled selected>Select Region</option>
+                                <option>Region 1</option>
+                                <option>Region 2</option>
+                                <option>Region 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Province</label>
+                            <select>
+                                <option disabled selected></option>
+                                <option>Province 1</option>
+                                <option>Province 2</option>
+                                <option>Province 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>City/Municipality</label>
+                            <select>
+                                <option disabled selected></option>
+                                <option>City 1</option>
+                                <option>City 2</option>
+                                <option>City 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Postal</label>
+                            <input type="number" placeholder="Enter Postal">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Country</label>
+                            <input type="disabled" placeholder="Philippines">
+                        </div>
+
+                        <div class="input-field">
+                            <label>License Number</label>
+                            <input type="text" placeholder="Enter your Licensed number">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Mobile Number</label>
+                            <input type="number" placeholder="ex. 09129488409">
+                        </div>
+
+
+                        <div class="input-field">
+                            <label>Email Address</label>
+                            <input type="email" placeholder="ex. johndoe@gmail.com">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Password</label>
+                            <input type="Password" placeholder="enter your password">
+                        </div>
+
+                    </div>
+                </div>
+
+                <div class="details ID">
+                    <span class="title">VEHICLE INFORMATION</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Vehicle Type</label>
+                            <select>
+                                <option disabled selected></option>
+                                <option>Vehicle 1</option>
+                                <option>Vehicle 2</option>
+                                <option>Vehicle 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Vehicle Brand</label>
+                            <select>
+                                <option disabled selected></option>
+                                <option>Vehicle Brand 1</option>
+                                <option>Vehicle Brand 2</option>
+                                <option>Vehicle Brand 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Vehicle Model</label>
+                            <select>
+                                <option disabled selected></option>
+                                <option>Vehicle Model 1</option>
+                                <option>Vehicle Model 2</option>
+                                <option>Vehicle Model 3</option>
+                            </select>
+                        </div>
+
+                        <div class="input-field">
+                            <label>Plate Number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Engine Number</label>
+                            <input type="text">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Chassis Number</label>
+                            <input type="text">
+                        </div>
+                    </div>
+                </div> 
+
+                <div class="details ID">
+                    <span class="title">REQUIREMENTS NEEDED</span>
+
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Driver's License (Photo - Front Part)</label>
+                            <input type="file">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Driver's License (Photo - Back Part)</label>
+                            <input type="file">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Vehicle's OR/CR (Photo)</label>
+                            <input type="file">
+                        </div>
+
+                        <div class="input-field">
+                            <label>NBI Clearance (Photo)</label>
+                            <input type="file">
+                        </div>
+
+                        <div class="input-field">
+                            <label>Drug Test</label>
+                            <input type="file">
+                        </div>
+                    </div>
+
+                    <button class="nextBtn">
+                        <span class="btnText">Submit</span>
+                        <i class="uil uil-navigator"></i>
+                    </button>
+                </div> 
+            </div>
+        </form>
     </div>
-  </body>
+
+    <!-- <script src="script.js"></script> -->
+</body>
 </html>
